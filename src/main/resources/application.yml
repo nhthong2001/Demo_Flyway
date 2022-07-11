@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: flyway
+  datasource:
+    password: 123
+    url: jdbc:postgresql://localhost:5432/FlywayDemo
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL82Dialect
+  flyway:
+    baseline-on-migrate: true
